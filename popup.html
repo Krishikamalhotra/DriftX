@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DriftX</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="popup-shell">
+    <main class="panel">
+      <div class="brand-row">
+        <div class="brand-mark">DX</div>
+        <div>
+          <p class="eyebrow">AI Reliability Demo</p>
+          <h1>DriftX</h1>
+        </div>
+      </div>
+
+      <p class="description">
+        Simulate AI drift on the latest assistant response, then restore it with
+        self-healing.
+      </p>
+
+      <section class="status-card">
+        <span class="status-dot" id="statusDot"></span>
+        <div>
+          <p class="status-label">Current State</p>
+          <p class="status-value" id="statusText">Ready</p>
+        </div>
+      </section>
+
+      <div class="button-stack">
+        <button id="openButton" class="action-button open-button">
+          Open ChatGPT
+        </button>
+        <button id="driftButton" class="action-button drift-button">
+          🔴 Drift
+        </button>
+        <button id="healButton" class="action-button heal-button">
+          🟢 Heal
+        </button>
+      </div>
+
+      <p class="footnote" id="messageText">
+        Open ChatGPT and select a conversation with an assistant response.
+      </p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
